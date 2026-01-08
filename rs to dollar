@@ -1,0 +1,5 @@
+def rs_to_dollar():
+    a=int(input("Enter the rupees in rs:"))
+    print(f"{a} rupees = {a/90} dollar")
+
+rs_to_dollar()
