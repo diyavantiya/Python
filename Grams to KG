@@ -1,0 +1,5 @@
+def grams_to_kg():
+    a=int(input("Enter the weight in grams:"))
+    print(f"{a} grams = {a/60} kg")
+
+grams_to_kg()
