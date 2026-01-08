@@ -1,0 +1,5 @@
+def hour_to_min():
+    a=int(input("Enter the time in hours:"))
+    print(f"The time {a} hours= {a*60} mins")
+
+hour_to_min()
