@@ -1,0 +1,7 @@
+def bytes():
+    a=int(input("Enter the bytes:"))
+    print(f"{a} bytes = {a/1000} kb")
+    print(f"{a} bytes = {a/1000000} mb")
+    print(f"{a} bytes = {a/1000000000000} gb")
+    
+bytes()
