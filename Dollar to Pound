@@ -1,0 +1,5 @@
+def dollars_to_Pound():
+    a=int(input("Enter the money in dollar:"))
+    print(f"{a} dollar = {a*48/70} pound")
+
+dollars_to_Pound()
