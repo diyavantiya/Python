@@ -1,0 +1,5 @@
+def no_of_digit():
+    a=int(input("Enter a no"))
+    digits=len(str(abs(a)))
+    print(f"No of digits are {digits}")
+no_of_digit()  
