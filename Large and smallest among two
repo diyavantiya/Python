@@ -1,0 +1,8 @@
+def large_and_small():
+    a=int(input("Enter a no1:"))
+    b=int(input("Enter a no2:"))
+    if(a>b):
+        print(f"{a} is largest")
+    else:
+        print(f"{b} is largest")
+large_and_small()
