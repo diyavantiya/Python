@@ -1,0 +1,9 @@
+import random
+def dup():
+    no=[random.randint(1,30) for _ in range(50)]
+    print("og list:")
+    print(no)
+    unique_no=list(set(no))
+    print("List after removing duplicates:")
+    print(unique_no)
+dup()
