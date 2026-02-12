@@ -1,0 +1,13 @@
+import random
+def q2_lst():
+    lst=[random.randint(1,50) for x in range (20)]
+    print(lst)
+    n=int(input("Enter a no:"))
+    if lst.count(n)>=1:
+        for i, v in enumerate(lst):
+            if v==n:
+                print(i)
+            else:
+                 print(n)
+q2_lst()                 
+          
