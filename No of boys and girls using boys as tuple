@@ -1,0 +1,10 @@
+names=[("Kavya",), "Hetvi", ("Vraj",), "Veli",("Dev",), "Heer"]
+boys=0
+girls=0
+for ele in names:
+    if isinstance(ele, tuple):
+        boys+=1
+    else:
+        girls+=1
+print("No of girls:", girls)
+print("no of boys:", boys)
