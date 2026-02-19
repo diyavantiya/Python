@@ -1,0 +1,11 @@
+stu=[(8, "Hetvi", 18), (27, "Kavya", 18), (31,"Veli", 17), (1,"Vraj", 17)]
+roll_no=[]
+name=[]
+age=[]
+for student in stu:
+    roll_no.append(stu[0])
+    name.append(stu[1])
+    age.append(stu[2])
+print("Roll no:", roll_no)
+print("Name:", name)
+print("Age:", age)
