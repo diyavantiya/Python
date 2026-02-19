@@ -1,3 +1,5 @@
+// check this program, output not coming
+
 stu=[(8, "Hetvi", 18), (27, "Kavya", 18), (31,"Veli", 17), (1,"Vraj", 17)]
 roll_no=[]
 name=[]
