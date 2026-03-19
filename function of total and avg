@@ -1,0 +1,12 @@
+def sum_avg(n1, n2, n3, n4, n5):
+    total=n1+n2+n3+n4+n5
+    avg=total/5
+    return total, avg
+
+marks=[]
+for i in range(5):
+    m=int(input(f"Enter marks of subject {i+1}: "))
+    marks.append(m)
+total, avg=sum_avg(marks[0], marks[1], marks[2], marks[3], marks[4])
+print("Total marks:", total)
+print("Average marks:", avg)
