@@ -1,0 +1,9 @@
+def compute(n, current=0, count=0):
+    if count == 4:
+        return 0
+    current = current*10+n
+    return current+compute(n, current, count+1)
+
+for digit in range(4, 8):
+    result=compute(digit)
+    print(f"Result for n ={digit} is {result}")
