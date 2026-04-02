@@ -1,0 +1,10 @@
+def prime_fact(n, divisor=2):
+    if n<=1:
+        return []
+    if n%divisor == 0:
+        return [divisor] + prime_fact(n//divisor, divisor)
+    else:
+        return(prime_fact(n, divisor+1))
+
+f = prime_fact(56)
+print(f)
