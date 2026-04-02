@@ -1,0 +1,8 @@
+def reverse_list(lst):
+    if len(lst) <=1:
+        return lst
+
+    return [lst[-1]] + reverse_list(lst[:-1])
+numbers=list(map(int, input("Enter numbers sperated by space:").split()))
+reversed_list = reverse_list(numbers)
+print("Reversed list:", reversed_list)
