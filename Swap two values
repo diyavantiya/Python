@@ -1,0 +1,5 @@
+#swap two values
+a=int(input("Enter number 1 to swap:"))
+b=int(input("Enter number 1 to swap:"))
+a,b=b,a
+print(f"The swapped value for a={a} is {b}")
