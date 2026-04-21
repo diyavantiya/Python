@@ -1,0 +1,4 @@
+#minor or major
+a=int(input("Enter your age to check minor or major:"))
+b= "minor" if a<18 else "major"
+print(b)
