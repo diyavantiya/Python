@@ -1,0 +1,11 @@
+#check valid triangle via angles
+
+def check_triangle(a,b,c):
+    if a+b+c==180 and a>0 and b>0 and c>0:
+        print("Triangle is valid.")
+    else:
+        print("Triangle is not valid.")
+
+
+a,b,c=map(int, input("Enter 3 angles of triangle:").split())
+check_triangle(a,b,c)
