@@ -1,3 +1,4 @@
-a, b, c = map(int, input().split())
-print("Largest:", max(a, b, c))
-print("Smallest:", min(a, b, c))
+#Largest and smallest among three
+a,b,c=map(int, input("Enter 3 numbers to find min and max").split())
+print("Maximum:", max(a,b,c))
+print("Minimum:", min(a,b,c))
