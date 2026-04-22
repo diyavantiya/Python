@@ -1,0 +1,14 @@
+# Write a Python program to remove duplicate words from a sentence using a function.
+
+def remove_dup(sent):
+    words=sent.lower().split()
+    removed_dup= []
+
+    for word in words:
+        if word not in removed_dup:
+            removed_dup.append(word)
+    return removed_dup
+
+str=input("Enter a sentence to remove duplicates:")
+result=remove_dup(str)
+print("Sentence without duplicate words:", result)
