@@ -1,0 +1,10 @@
+# Write a Python program to calculate the square of numbers in a list using a function.
+import random
+def square(lst):
+    sq_list=[]
+    for n in lst:
+        sq_list.append(n**2)
+    return sq_list
+lst=list(map(int, input("Enter numbers to calculate squares: ").split()))
+result=square(lst)
+print("Squared list:", result)
