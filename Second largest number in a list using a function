@@ -1,0 +1,15 @@
+# Write a Python program to find the second largest number in a list using a function.
+
+def second_largest(lst):
+    unique_list = list(set(lst))  # remove duplicates
+    
+    if len(unique_list) < 2:
+        return "Not enough elements"
+    
+    unique_list.sort()
+    return unique_list[-2]
+
+nums = list(map(int, input("Enter numbers to find second largest: ").split()))
+
+result = second_largest(nums)
+print("Second largest number:", result)
