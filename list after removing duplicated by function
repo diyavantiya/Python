@@ -1,0 +1,12 @@
+# Write a Python program to remove duplicate elements from a list using a function.
+
+def remove_dup(lst):
+    result=[]
+    for n in lst:
+        if n not in result:
+            result.append(n)
+    return result
+
+num = list(map(int, input("Enter numbers (duplicates allowed): ").split()))
+result=remove_dup(num)
+print("List after removing duplicates:", result)
