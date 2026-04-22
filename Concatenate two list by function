@@ -1,0 +1,10 @@
+# Write a Python program to concatenate two lists using a function. ● Create two lists.
+
+def concatenate_lists(lst1, lst2):
+    return lst1 + lst2
+
+list1 = list(map(int, input("Enter first list: ").split()))
+list2 = list(map(int, input("Enter second list: ").split()))
+
+result = concatenate_lists(list1, list2)
+print("Concatenated list:", result)
