@@ -1,0 +1,14 @@
+# Write a program that keeps asking the user to enter a positive integer. If the user enters a negative number or invalid input, display an error message and ask again until a valid number is entered.
+
+while True:
+    try:
+        num = int(input("Enter a positive integer: "))
+
+        if num>0:
+            print("Valid number entered:", num)
+            break
+        else:
+            print("Error: Please enter a positive number.")
+
+    except ValueError:
+        print("Error: Invalid input. Please enter an integer.")
