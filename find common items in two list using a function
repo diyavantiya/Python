@@ -1,0 +1,13 @@
+#Write a Python program to find common elements between two lists using a function.
+
+def common(lst1, lst2):
+    result=[]
+    for item in lst1:
+        if item in lst2 and not item in result:
+            result.append(item)
+    return result
+
+list1=list(map(int, input("Enter list 1 to find common items between both list:").split()))
+list2=list(map(int, input("Enter list 2 to find common items between both list:").split()))
+result=common(list1, list2)
+print("Common items between both lists are:", result)
