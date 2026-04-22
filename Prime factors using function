@@ -1,0 +1,19 @@
+# Write a Python program to generate all prime factors of a number using a function.
+
+def prime_fact(n):
+    factors=[]
+    i=2
+    while i*i<=n:
+        while n%i==0:
+            factors.append(i)
+            n=n//i
+        i+=1
+
+    if n>1:
+        factors.append(n)
+
+    return factors
+
+fact=int(input("Enter number to find prime factors:"))
+result=prime_fact(fact)
+print("Prime facotrs:", result)
