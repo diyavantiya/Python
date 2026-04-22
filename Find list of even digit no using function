@@ -1,0 +1,12 @@
+# Write a Python program to find numbers in a list that have an even number of digits using a function.
+
+def even_no_of_digit(num):
+    result=[]
+    for n in num:
+        if len(str(abs(n)))%2==0:
+            result.append(n)
+    return result
+
+lst=list(map(int, input("Enter list of numbers to find even-digit numbers:").split()))
+result=even_no_of_digit(lst)
+print("List of even digit numbers is:", result)
