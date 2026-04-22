@@ -1,0 +1,18 @@
+# Write a Python program to count the number of vowels and consonants in a string using a function.
+
+def count_vowels_consonants(s):
+    vowels="aeiouAEIOU"
+    c_vowel=0
+    c_consonant=0
+
+    for ch in s:
+        if ch.isalpha():
+            if ch in vowels:
+                c_vowel+=1
+            else:
+                c_consonant+=1
+    return c_vowel, c_consonant
+
+str=input("Enter a string to count vowels and consonants: ")
+vowels, consonants=count_vowels_consonants(str)
+print(f"Vowles: {vowels}, consonants:{consonants}")
