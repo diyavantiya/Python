@@ -1,0 +1,17 @@
+# Write a Python program to find the maximum and minimum values in a list using a function.
+
+def find_max_min(lst):
+    max=lst[0]
+    min=lst[0]
+
+    for num in lst:
+        if num>max:
+            max=num
+        if num<min:
+            min=num
+    return max, min
+
+num = list(map(int, input("Enter numbers to find max and min: ").split()))
+max, min = find_max_min(num)
+print("Maximum value:", max)
+print("Minimum value:", min)
