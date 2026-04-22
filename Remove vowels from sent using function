@@ -1,0 +1,13 @@
+#Write a Python program to remove all vowels from a string using a function.
+
+def remove_vowels(s):
+    vowels="aeiouAEIOU"
+    result=""
+    for ch in s:
+        if ch not in vowels:
+            result+=ch
+    return result
+
+str=input("Enter a sentence to remove vowels:")
+result=remove_vowels(str)
+print("Sentance after removing vowels: ", result)
