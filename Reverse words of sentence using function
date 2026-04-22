@@ -1,0 +1,10 @@
+# Write a Python program to reverse each word in a sentence using a function.
+
+def reversed_words(sent):
+    words= sent.split()
+    reversed_words= [word[::-1] for word in words]
+    return " ".join(reversed_words)
+
+text= input("Enter a sentence to reverse words:")
+result=reversed_words(text)
+print("Snetence with reversed words:", result)
