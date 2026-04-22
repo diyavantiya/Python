@@ -1,0 +1,14 @@
+# Write a Python program to find all numbers divisible by a given number k in a list using a function.
+
+def div_by_k(num,k):
+    result=[]
+
+    for n in num:
+        if n % k==0:
+            result.append(n)
+    return result
+
+lst=list(map(int, input("Enter list of numbers to check divisibility by a number:").split()))
+k=int(input("Enter the divisor k: "))
+result=div_by_k(lst,k)
+print(f"Numbers divisible by{k} are: {result}")
