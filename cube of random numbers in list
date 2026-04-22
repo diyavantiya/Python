@@ -2,8 +2,13 @@
 
 import random
 
-og_list=[random.randint(1,10) for n in range(10)]
-cube_list=[n**3 for n in og_list]
+def cube(lst):
+    cube_list=[]
+    for n in lst:
+        cube_list.append(n**3)
+    return cube_list
 
+og_list=[random.randint(1,10) for n in range(10)]
 print("Original list: ", og_list)
-print("Cubed list:", cube_list)
+result=cube(og_list)
+print("Cubed list:", result)
