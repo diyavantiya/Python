@@ -1,0 +1,16 @@
+# Write a Python program to count the frequency of each word in a sentence using a function.
+
+def freq(sent):
+    words=sent.lower().split()
+    freq={}
+
+    for word in words:
+        if word in freq:
+            freq[word]+=1
+        else:
+            freq[word]=1
+    return freq
+
+str=input("Enter a sentence to count frequency of words:")
+result=freq(str)
+print("Word frequences: ", result)
