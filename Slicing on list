@@ -1,0 +1,16 @@
+# Write a Python program to perform slicing operations on a list.
+
+import random
+
+lst=[random.randint(1,10) for i in range(10)]
+
+first_5=lst[:5]
+last_5=lst[-5:]
+index_2_7=lst[2:8]
+alt=lst[::2]
+
+print("Original list:", lst)
+print("First 5 elements:", first_5)
+print("Last 5 elements:", last_5)
+print("Elements from index 2 to 7:", index_2_7)
+print("Every alternate element:", alt)
