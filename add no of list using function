@@ -1,0 +1,11 @@
+# Write a Python program to create a list of numbers and find the sum of all elements using a function.
+
+def sum(lst):
+    total=0
+    for num in lst:
+        total+=num
+    return total
+
+lst=list(map(int, input("Enter list of numbers to add: ").split()))
+result=sum(lst)
+print("Sum of given numbers: ", result)
