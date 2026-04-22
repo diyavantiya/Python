@@ -1,0 +1,9 @@
+# Write a Python program to filter and display names from a list whose length is greater than 5 using the filter() function.
+
+def long_names(name):
+    return len(name) > 5
+
+names = input("Enter names: ").split()
+
+result = list(filter(long_names, names))
+print("Names with length greater than 5:", result)
