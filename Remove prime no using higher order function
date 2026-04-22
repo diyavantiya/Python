@@ -1,0 +1,17 @@
+#  Write a Python program to remove all prime numbers from a list using a higher order function.
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,n):
+        if n%i==0:
+            return False
+        else:
+            return True
+        
+def remove_prime(lst):
+    return list(filter(lambda x: not is_prime(x), lst))
+
+num=list(map(int, input("Enter list of integers to remove prime numbers:").split()))
+
+result=remove_prime(num)
+print("List after removing prime numbers:", result)
