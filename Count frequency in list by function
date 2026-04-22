@@ -1,0 +1,16 @@
+# Write a Python program to find the frequency of elements in a list using a function.
+def frequency(lst):
+    freq = {}
+    
+    for item in lst:
+        if item in freq:
+            freq[item] += 1
+        else:
+            freq[item] = 1
+    
+    return freq
+
+nums = list(map(int, input("Enter elements to find frequency: ").split()))
+
+result = frequency(nums)
+print("Frequency of elements:", result)
