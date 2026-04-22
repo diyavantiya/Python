@@ -1,0 +1,9 @@
+# Write a Python program to create a list of 10 random numbers and generate the cube of each number.
+
+import random
+
+og_list=[random.randint(1,10) for n in range(10)]
+cube_list=[n**3 for n in og_list]
+
+print("Original list: ", og_list)
+print("Cubed list:", cube_list)
