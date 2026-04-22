@@ -1,0 +1,9 @@
+# Write a Python program to sort a list using a function.
+def sort_list(lst):
+    lst.sort()   # sorts the list in ascending order
+    return lst
+
+nums = list(map(int, input("Enter numbers to sort: ").split()))
+
+result = sort_list(nums)
+print("Sorted list:", result)
