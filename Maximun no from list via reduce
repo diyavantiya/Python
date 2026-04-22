@@ -1,0 +1,10 @@
+# Develop a Python program that takes a list of integers as input and finds the maximum number from the list using the reduce() function.
+
+from functools import reduce
+
+def max(lst):
+    return reduce(lambda a,b: a if a>b else b, lst)
+
+nums = list(map(int, input("Enter numbers to find maximum: ").split()))
+result = max(nums)
+print("Maximum number:", result)
