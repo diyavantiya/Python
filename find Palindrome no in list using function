@@ -1,0 +1,13 @@
+# Write a Python program to find all palindrome numbers in a list using a function.
+
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+
+def find_palindrome(lst):
+    return [x for x in lst if is_palindrome(x)]
+
+num=list(map(int, input("Enter list of numbers to find palindrome:").split()))
+
+result= find_palindrome(num)
+
+print("The list of Palindrome numbers is:", result)
